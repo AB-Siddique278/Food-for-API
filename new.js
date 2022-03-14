@@ -15,6 +15,8 @@ const searchFood = () => {
     .then(data =>displaySearchResult(data.meals))
 
 }
+
+
 const displaySearchResult = meals =>{
     const searchresult = document.getElementById('search-result');
     meals.forEach(meal => {
@@ -36,3 +38,4 @@ const displaySearchResult = meals =>{
         searchresult.appendChild(div);
     })
 }
+
